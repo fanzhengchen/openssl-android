@@ -1,6 +1,6 @@
 OpenSSL FIPS library for Android  
 ================================  
-以下の環境をAndroid用にビルドした結果。  
+Ubuntu11.10(64bit)上で以下の環境をAndroid用にビルドした結果。  
 
 + openssl-1.0.1g
 + openssl-fips-2.0.5
@@ -23,10 +23,15 @@ $HOMEにこのリポジトリをクローンする。
 ビルド方法  
 ----------
 『OpenSSL FIPS Library and Android Guide.pdf』を参照。 
+ドキュメント内のコマンドはandroid-14を前提にしているのでandroid-17に置き換える。  
+
 
 ビルド結果 
 ----------
 install/に設定。  
+
+	cp -rf /usr/local/ssl install/
+
 
 参考  
 ----  
